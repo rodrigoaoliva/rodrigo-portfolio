@@ -19,6 +19,8 @@ nav {
     align-items: center;
     padding-right: 3%;
     padding-left: 3%;
+    overflow: hidden;
+    position: relative;
 }
 
 nav img {
@@ -44,18 +46,21 @@ nav img {
     }
 }
 
-nav h2 {
+nav a {
     font-size: 19px;
     display: inline;
     margin-right: 23px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 @media screen and (max-width:600px) {
-    nav h2 {
+    nav a {
         font-size: 13px;
         font-weight: 600;
         display: inline;
-        margin-right: 8px;  
+        margin-right: 5px;  
 
     }
 }
@@ -202,11 +207,36 @@ main section {
     height: 60px;
     color: white;
     padding: 13px 25px 15px 25px;
-    border-top-right-radius: 5px;
+    border-top-right-radius: 8px;
     justify-content: space-evenly;
 }
 
 main section h1 {
     margin-bottom: 6px;
 }
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-top: solid 1px #5c5c5cc5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer section {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer h3, footer a {
+    margin-right: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 17px;
+
+}
+
 
