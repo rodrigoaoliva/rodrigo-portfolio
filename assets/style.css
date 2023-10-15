@@ -168,9 +168,12 @@ main section {
 .project {
     flex-grow: 1;
     height: 300px;
-    border: solid 1px #FFFFFF;
+    box-shadow: 0 0 15px rgba(79, 79, 79, 0.268);
+    border: solid 1px #313131 ;
     border-radius: 20px;
-    margin-top: 30px;    
+    margin-top: 30px;
+    overflow: hidden; /* Ensure that the image doesn't overflow the container */
+    position: relative;
 }
 
 #first-project-height {
@@ -181,5 +184,29 @@ main section {
     margin-right: 20px;
 }
 
+.project img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center 30%;
+}
 
+
+.project-text {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    bottom: 0; /* Align the text to the bottom */
+    background-image: linear-gradient(#1534fc, #042d9d);
+    width: fit-content;
+    height: 60px;
+    color: white;
+    padding: 13px 25px 15px 25px;
+    border-top-right-radius: 5px;
+    justify-content: space-evenly;
+}
+
+main section h1 {
+    margin-bottom: 6px;
+}
 
