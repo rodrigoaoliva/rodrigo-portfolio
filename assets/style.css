@@ -225,27 +225,27 @@ when screen's width isn't larger than 1354px*/
 
 }
 
-/* Styles for the element with the ID 'first-project-height' (the first project)*/
+/* Styling for the element with the ID 'first-project-height' (the first project)*/
 #first-project-height {
-    height: 400px; /*Sets a fixed height*/
+    height: 500px; /*Sets a fixed height*/
 }
 
-/* Styles for the element with the ID 'first-project-height' when screen's width 
+/* Styling for the element with the ID 'first-project-height' when screen's width 
 isn't larger than 413px*/
 @media screen and (max-width:413px) {
     #first-project-height {
-    height: 350px; /*Changes fixed height*/
+    height: 350px; /*Changes fixed height to*/
         
     }
 }
 
 
-/* Styles for the element with the ID 'left-project' (projects on the left) */
+/* Styling for the element with the ID 'left-project' (projects on the left) */
 #left-project {
     margin-right: 20px; /*Adds right margin for spacing between the projects*/
 }
 
-/* Styles for the element with the ID 'left-project' when screen's width isn't
+/* Styling for the element with the ID 'left-project' when screen's width isn't
 larger than 912px */
 @media screen and (max-width:912px) {
     #left-project {
@@ -254,111 +254,120 @@ larger than 912px */
     }
 }
 
-
+/* Styling for images within elements with the class 'project' */
 .project img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    object-position: center 30%;
-}
-
-@media screen and (max-width:642px) {
-    .project img {
-     object-fit:cover;
-        
-    }
+    width: 100%; /* Set image width to 100% of the container */
+    height: 100%; /* Set image height to 100% of the container */
+    object-fit: cover;  /* Ensure the image covers the container (zooms instead of streching)*/
+    object-position: center 30%; /* Set the image position */
 }
 
 
+
+/* Styling for elements with the class 'project-text' */
 .project-text {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
+    display: flex; /* Use flex layout */
+    position: absolute; /* Position the element absolutely */
+    flex-direction: column; /*Displays content in a column layout*/
     bottom: 0; /* Align the text to the bottom */
     background-image: linear-gradient(#1534fc, #042d9d);
-    width: fit-content;
-    height: 60px;
-    color: white;
-    padding: 13px 25px 15px 25px;
-    border-top-right-radius: 8px;
-    justify-content: space-evenly;
+    width: fit-content; /* Set width based on content */
+    height: 60px; /*Sets a fixed height*/
+    color: white; /*Defines text color*/
+    padding: 13px 25px 15px 25px; /*Adds padding to all sides of the container*/
+    border-top-right-radius: 8px; /*Adds roundness to the border at the top right*/
+    justify-content: space-evenly; /* Spaces content evenly */
 }
 
+/* Styling for elements with the class 'project-text' when screen's width
+isn't larger than 642px*/
 @media screen and (max-width:642px) {
     .project-text {
-     width: 100%;
-     padding: 7px 0 7px 0;
-     border-top-right-radius: 0;
+     width: 100%; /*Changes width to 100% of it's parent*/
+     padding: 7px 0 7px 0; /*Changes the padding of all sides of the container*/
+     border-top-right-radius: 0; /*Changes border roundness at the top right to 0*/
         
     }
 }
 
+/* Styling for 'h1' elements within 'section' elements in the 'main' element */
 main section h1 {
-    margin-bottom: 6px;
+    margin-bottom: 6px; /*Adds bottom margin*/
 }
 
+/* Styling for 'h1' elements within 'section' elements in the 'main' element 
+when screen's width isn't larger than 642px*/
 @media screen and (max-width:642px) {
     main section h1 {
-    font-size: 19px;
-    text-align: center;
+    font-size: 19px; /*Defines font size*/
+    text-align: center; /*Aligns the text horizontally*/
         
     }
 }
 
+/*Styling for 'p' elements within 'section' elements in the 'main' element
+when screen's width isn't larger than 642px*/
 @media screen and (max-width:642px) {
     main section p {
-    text-align: center;
+    text-align: center; /*Aligns the text horizontally*/
         
     }
 }
 
-
+/*Styling for the footer of the page*/
 footer {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    border-top: solid 1px #5c5c5cc5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%; /* Set width to 100% */
+    padding-top: 20px; /* Adds padding to the top */
+    padding-bottom: 10px; /* Adds padding to the bottom */
+    border-top: solid 1px #5c5c5cc5; /*Adds a solid border to the top*/
+    display: flex; /* Use flex layout */
+    flex-direction: column; /* Display content in a column layout */
+    align-items: center; /* Center-align content */
 }
 
+/* Styling for 'section' elements within the 'footer' element */
 footer section {
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
+    margin: 20px; /*Adds margin to all sides for spacing*/
+    display: flex; /* Use flex layout */
+    flex-direction: row; /* Display content in a row layout */
 }
 
-footer a {
-    margin-right: 30px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 17px;
-
-}
-
-a:hover {
-    color: #ffffff8f;
-    transition: color 0.4s;
-}
-
+/* Styling for 'section' elements within the 'footer' element when screen's width
+isn't larger than 536px */
 @media screen and (max-width:536px) {
     footer section {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 0px;
-        margin-bottom: 15px;
-        margin-top: 5px;
+        display: flex; /* Use flex layout */
+        flex-direction: column; /* Display content in a column layout */
+        text-align: center; /*Centers the text horizontally*/
+        margin: 0px; /*Changes margin of all sides to 0*/
+        margin-bottom: 15px; /*Adds bottom margin*/
+        margin-top: 5px; /*Adds top margin*/
         
     }
 }
 
+/*Styling for 'a' elements (links) within the 'footer' element */
+footer a {
+    margin-right: 30px; /*Adds a right margin for spacing between 'a' elements (links)*/
+    font-weight: 400; /*Defines font weight*/
+    text-decoration: none; /*Removes text decoration*/
+    color: #FFFFFF; /*Defines font color*/
+    font-size: 17px; /*Defines font size*/
+
+}
+
+/* Hover effect for 'a' elements within the 'footer' element */
+a:hover {
+    color: #ffffff8f; /*Changes font color*/
+    transition: color 0.4s; /*Adds a smooth transition to the font color*/
+}
+
+/*Styling for 'a' elements (links) within the 'footer' element when screen's
+width isn't larger than 536px */
 @media screen and (max-width:536px) {
     footer a {
-        margin-right: 0;
-        margin-top: 12px;
+        margin-right: 0; /*Changes right margin to 0*/
+        margin-top: 12px; /*Adds top margin*/
     }
 }
 
