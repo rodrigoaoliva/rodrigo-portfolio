@@ -33,12 +33,12 @@ nav img {
 
 }
 
-/*Styling for the navigation bar image when screen width isn't larger than 472px*/
+/*Styling for the navigation bar image when screen's width isn't larger than 472px*/
 @media screen and (max-width:472px) {
     nav img {
-        max-width: 110px; /*Sets maximum width*/
-        border-radius: 7px; /*Rounds the corners*/
-        padding-right: 5px; /*Adds padding to the right*/
+        max-width: 110px; /*Changes maximum width*/
+        border-radius: 7px; /*Changes roundness of corners*/
+        padding-right: 5px; /*Changes padding to the right*/
     }
 }
 
@@ -51,188 +51,205 @@ nav a {
     color: #FFFFFF; /*Defines a font color to the text*/
 }
 
-/*Styling for the navigation links  when screen width isn't larger than 600px*/
+/*Styling for the navigation links  when screen's width isn't larger than 600px*/
 @media screen and (max-width:600px) {
     nav a {
         font-size: 13px; /*Changes font size*/
         font-weight: 600; /*Changes font weight*/
-        margin-right: 5px;  
+        margin-right: 5px;  /*Changes right margin (spacing between the text)*/
 
     }
 }
+
+/*Styling for the header section of the page*/
 header {
-    background-image: linear-gradient(#1534fc, #042d9d);
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-left: 50px;
-    padding-right: 50px;
+    background-image: linear-gradient(#1534fc, #042d9d); /*Sets a gradient background color*/
+    height: 500px; /*Sets a fixed height*/
+    display: flex; /*Use flexbox for layout*/
+    align-items: center; /*Aligns the header elements vertically*/
+    justify-content: space-evenly; /*Adds spacing between the header elements*/
+    padding-left: 50px; /*Adds left padding*/
+    padding-right: 50px; /*Adds right padding*/
 }
 
+/*Styling for the header when screen's width isn't larger than 908px*/
 @media screen and (max-width:908px) {
     header {
-        background-image: linear-gradient(#1534fc, #042d9d);
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        height: auto; /*Makes height automatically adjust to its content*/
+        flex-direction: column; /*Display elements as a column*/
+        padding-top: 60px; /*Adds top padding*/
+        padding-bottom: 60px; /*Adds bottom padding*/
     }
 }
 
+/*Syling for the header image (profile picture)*/
 header img {
-    border-radius: 100%;
-    width: 500px;
-    height: 500px;
-    margin-top: 150px;
-    border: solid 12px #121212;
+    border-radius: 100%; /*Makes image a circle*/
+    width: 500px; /*Sets width*/
+    height: 500px; /*Sets height*/
+    margin-top: 150px; /*Adds a top margin */
+    border: solid 12px #121212; /*Adds a solid border*/
 }
 
+/*Styling for the header image when screen's width isn't larger than 1356px*/
 @media screen and (max-width:1356px) {
     header img {
-      width: 350px;
-      height: 350px;
-      margin-top: auto;
-      margin-left: 50px;
-      border: none;
+      width: 350px; /*Changes width*/
+      height: 350px; /*Changes height*/
+      margin-top: auto; /*Defines top margin to automatically adjust*/
+      margin-left: 50px; /*Adds a left margin*/
+      border: none; /*Removes solid border*/
     }
   }
 
+  /*Styling for the header image when screen's width isn't larger than 908px*/
   @media screen and (max-width:908px) {
     header img {
-      width: 450px;
-      height: 450px;
-      margin-top: 40px;    
-      margin-left: 0;
+      width: 450px; /*Changes width*/
+      height: 450px; /*Changes height*/
+      margin-top: 40px; /*Defines top margin*/  
+      margin-left: 0; /*Removes left margin*/
     }
   }
 
+ /*Styling for the header image when screen's width isn't larger than 544px*/
   @media screen and (max-width:544px) {
     header img {
-        width: 270px;
-      height: 270px;
-      margin-top: 40px;    
-      margin-left: 5px;
-      margin-right: 5px;
-      margin-bottom: -30px;
+        width: 270px; /*Changes width*/
+      height: 270px; /*Changes height*/
+      margin-left: 5px; /*Adds left margin*/
+      margin-right: 5px; /*Adds right margin*/
+      margin-bottom: -30px; /*Adds bottom margin*/
     }
   }
 
+/*Styling for h1 elements in the header*/
 header h1 {
-    margin-bottom: 11px;
-    color: white;
+    margin-bottom: 11px; /*Adds bottom margin*/
+    color: white; /*Defines font color*/
 }
 
-header .line1 {
-    font-size: 45px;
+/*Styling for the second text line in the header*/
+header .line2 {
+    font-size: 45px; /*Defines font size*/
 }
 
-header .line1and2 {
-    font-size: 30px;
-    font-weight: 400;
+/* Styling for elements with the class 'line1and3' within the 'header' element */
+header .line1and3 { 
+    font-size: 30px; /*Defines font size*/
+    font-weight: 400; /*Defines font weight*/
 }
 
+/*Styling for p elements within the header*/
 header p {
-    color: #f0f0f0;
-    max-width: 600px;
-    margin-top: 30px;
-    font-size: 20px;
-    line-height: 25px;
+    color: #f0f0f0; /*Defines font color*/
+    max-width: 600px; /*Sets a maximum width*/
+    margin-top: 30px; /*Adds top margin*/
+    font-size: 20px; /*Defines font size*/
+    line-height: 25px; /*Defines line height*/
 }
 
+/*Syling for the 'main' section of the page*/
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 70px 30px 70px;
+    display: flex; /* Use flex layout */
+    justify-content: center; /*Horizontally centers the content*/
+    align-items: center; /*Vertically centers the content*/
+    flex-direction: column; /*Displays content in a column layout*/
+    margin: 70px 30px 70px; /*Adds margins for spacing*/
 }
 
+ /*Styling for the 'main' section when screen's width isn't larger than 642px*/
 @media screen and (max-width:642px) {
     main {
-    margin: 50px 15px 50px;
+    margin: 50px 15px 50px; /*Changes marins*/
         
     }
 }
 
+/* Styling for 'section' elements within the 'main' element */
 main section {
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    flex-direction: column;
+    display: flex; /* Use flex layout */
+    justify-content: center; /*Horizontally centers the content*/
+    width: 70%; /* Set width to 70% of the parent container */
+    flex-direction: column; /*Displays content in a column layout*/
 }
 
+/* Styling for 'section' elements within the 'main' element 
+when screen's width isn't larger than 1354px*/
 @media screen and (max-width:1354px) {
     main section {
-    width: 100%;
+    width: 100%; /*Changes width to 100% of the parent container*/
         
     }
 }
 
-
+/*Styling for elements with the .row-display class*/
 .row-display {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    display: flex; /* Use flex layout */
+    flex-direction: row; /*Displays content in a row layout*/
 
 }
 
+/*Styling for elements with the .row-display class when screen's width isn't larger than 912px*/
 @media screen and (max-width:912px) {
     .row-display {
-    display: flex;
-    flex-direction: column;
+    flex-direction: column; /*Changes content to be displayed in a column layout*/
         
     }
 }
 
+/*Styling for elements with the .row-display class when screen's width isn't larger than 426px*/
 @media screen and (max-width:426px) {
     .row-display {
-    max-height: 500px;
+    max-height: 500px; /*Sets a maximum height of 500px*/
         
     }
 }
 
+/* Styling  for elements with the class 'project' */
 .project {
-    flex-grow: 1;
-    height: 300px;
-    box-shadow: 0 0 15px rgba(79, 79, 79, 0.268);
-    border: solid 1px #313131 ;
-    border-radius: 20px;
-    margin-top: 30px;
+    flex-grow: 1; /* Allow element to grow within the flex container */
+    height: 300px;  /* Sets a fixed height height*/
+    box-shadow: 0 0 15px rgba(79, 79, 79, 0.268); /*Applies bow shadow*/
+    border: solid 1px #313131 ; /*Adds a solid border*/
+    border-radius: 20px; /*Adds rounded corners to the borders*/
+    margin-top: 30px; /*Adds margin to the top for spacing*/
     overflow: hidden; /* Ensure that the image doesn't overflow the container */
-    position: relative;
+    position: relative;  /* Use relative positioning */
 }
 
+/* Hover effect for elements with the class 'project' */
 .project:hover {
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.22);
-    transition: box-shadow 0.3s;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.22); /*Changes box shadow*/
+    transition: box-shadow 0.3s; /*Adds a smooth transition to the box shadow*/
 
 }
 
+/* Styles for the element with the ID 'first-project-height' (the first project)*/
 #first-project-height {
-    height: 400px;
+    height: 400px; /*Sets a fixed height*/
 }
 
+/* Styles for the element with the ID 'first-project-height' when screen's width 
+isn't larger than 413px*/
 @media screen and (max-width:413px) {
     #first-project-height {
-    height: 350px;
+    height: 350px; /*Changes fixed height*/
         
     }
 }
 
 
-
+/* Styles for the element with the ID 'left-project' (projects on the left) */
 #left-project {
-    margin-right: 20px;
+    margin-right: 20px; /*Adds right margin for spacing between the projects*/
 }
 
+/* Styles for the element with the ID 'left-project' when screen's width isn't
+larger than 912px */
 @media screen and (max-width:912px) {
     #left-project {
-    margin-right: 0px;
+    margin-right: 0px; /*Changes right margin to 0px*/
         
     }
 }
