@@ -7,13 +7,14 @@ This website serves as platform where I can showcase my projects, skills, and ex
 ## Usage
 
 Explore my projects, learn more about me, and get in touch with me using the navigation bar provided.
+
 ![Website navigation links and header](assets/Screenshot%202023-10-16%20163531.png)
 
 
 ## Table of Contents
-- [About Me](#header)
-- [My Works](#works)
-- [Contact Me](#footer)
+- About Me
+- My Works
+- Contact Me
 
 ## About Me
 I'm Rodrigo Oliva, a passionate and innovative UI/UX designer and programmer with a strong commitment to creating exceptional user experiences. Through a combination of design thinking, user research, and a keen eye for aesthetics, I bring digital solutions to life that not only look stunning but also work seamlessly.
@@ -38,7 +39,7 @@ MIT License.
 
 Huma Kabacki's portfolio: https://unsplash.com/@humakabakci
 
-2. My first project was originally created by Horiseon Social Solution Services, Inc and has been improved and optimized by Rodrigo Oliva (https://github.com/rodrigoaoliva).
+2. My first project was originally created by Horiseon Social Solution Services, Inc and has been improved and optimized by me (https://github.com/rodrigoaoliva).
 
 
 
