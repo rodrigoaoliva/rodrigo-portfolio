@@ -1,65 +1,61 @@
+/* Reset margins and paddings for all HTML elements */
 * {
     margin: 0;
     padding: 0;
 }
 
+/*Styling the body section of the page*/
 body {
-    background-color: #121212;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ebebeb;
+    background-color: #121212; /*Sets a background color to the body*/
+    font-family: Arial, Helvetica, sans-serif; /*Defines the font family of text within the body*/
+    color: #ebebeb; /*Defines the font color of text within the body*/
 }
 
-
+/*Styling for the navigation bar*/
 nav {
-    background-color: #121212;
-    height: 75px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 3%;
-    padding-left: 3%;
-    overflow: hidden;
-    position: relative;
+    height: 75px; /*Defines the height of the navigation bar*/
+    display: flex; /*Sets a flex-box layout*/
+    justify-content: space-between; /*Adds space between the image and navigation links*/
+    align-items: center; /*Aligns the navigation bar elements vertically*/
+    padding-right: 3%; /*Adds padding to the right for spacing*/
+    padding-left: 3%; /*Adds padding to the left for spacing*/
+    position: relative; /*Positioning context for child elements */
 }
 
+/*Styling for the navigation bar image (logo)*/
 nav img {
-    width: 100%;
-    height: auto;
-    max-width: 160px;
-    border: solid 1px #ffffff44;
-    border-radius: 10px;
-    padding: 7px;
-    padding-right: 5px;
+    width: 100%; /*Makes the image full width*/
+    height: auto; /*Maintains the aspect ratio of the image*/
+    max-width: 160px; /*Sets maximum width*/
+    border: solid 1px #ffffff44; /*Adds a solid border to all sides*/
+    border-radius: 10px; /*Rounds the corners*/
+    padding: 7px; /*Adds padding to all sides*/
 
 }
 
+/*Styling for the navigation bar image when screen width isn't larger than 472px*/
 @media screen and (max-width:472px) {
     nav img {
-        width: 100%;
-        height: auto;
-        max-width: 110px;
-        border: solid 1px #ffffff44;
-        border-radius: 7px;
-        padding: 7px;
-        padding-right: 5px;
+        max-width: 110px; /*Sets maximum width*/
+        border-radius: 7px; /*Rounds the corners*/
+        padding-right: 5px; /*Adds padding to the right*/
     }
 }
 
+/* Styling for navigation links */
 nav a {
-    font-size: 19px;
-    display: inline;
-    margin-right: 23px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #FFFFFF;
+    font-size: 19px; /*Defines a font size of 19px*/
+    margin-right: 23px; /*Adds a right margin for spacing between the text*/
+    font-weight: 400; /*Sets a font weight*/
+    text-decoration: none; /*Removes text decorations*/
+    color: #FFFFFF; /*Defines a font color to the text*/
 }
 
+/*Styling for the navigation links  when screen width isn't larger than 600px*/
 @media screen and (max-width:600px) {
     nav a {
-        font-size: 13px;
-        font-weight: 600;
-        display: inline;
+        font-size: 13px; /*Changes font size*/
+        font-weight: 600; /*Changes font weight*/
         margin-right: 5px;  
 
     }
